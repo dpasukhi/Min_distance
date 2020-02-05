@@ -36,7 +36,7 @@ momo:
 		point p2(x2, y2, 0.f);
 		point p3(x3, y3, 0.f);
 		point p4(x4, y4, 0.f);
-		cout << distance_segment_to_segment(p1, p2, p3, p4);
+		cout << "\nYout min distance is: " << distance_segment_to_segment(p1, p2, p3, p4) << endl;
 	}
 	else 
 	{
@@ -71,12 +71,12 @@ momo:
 		point p2(x2, y2, z2);
 		point p3(x3, y3, z3);
 		point p4(x4, y4, z4);
-		cout << distance_segment_to_segment(p1, p2, p3, p4);
+		cout << "\nYout min distance is: "<< distance_segment_to_segment(p1, p2, p3, p4) << endl;
 	}
-	cout << "Repeat?(1/0)/(y/n)" << endl;
+	cout << "Repeat?(1/0)/(y/n) " << endl;
 	string mind;
 	cin >> mind;
-	if (mind.find(y) || mind.find(Y) || mind.find(1))
+	if (mind.find('y') || mind.find('Y') || mind.find('1'))
 		goto momo;
 	system("pause>nul");
 	return 0;
